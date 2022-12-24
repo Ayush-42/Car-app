@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "mapbox-gl": "^2.11.1",
     "next": "12.3.1",
+    "node-dev": "^7.4.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.6.0"
+    "react-icons": "^4.7.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",

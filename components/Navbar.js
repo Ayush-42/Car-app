@@ -19,30 +19,30 @@ const currentAccount = ''
 
 const Navbar = () => {
     return <div className={style.wrapper}>
-        <div className={style.leftMenu}>
-            <div className={style.logo}>REST</div>
-            <div className={style.menuItem}>Ride</div>
-            <div className={style.menuItem}>Drive</div>
-            <div className={style.menuItem}>More</div>
-        </div>
-        <div className={style.rightMenu}>
-            <div className={style.menuItem}>Help</div>
+      <div className={style.leftMenu}>
+            <div className={style.logo}>UBER</div>
+        <div className={style.menuItem}>Ride</div>
+        <div className={style.menuItem}>Drive</div>
+        <div className={style.menuItem}>More</div>
+      </div>
+      <div className={style.rightMenu}>
+        <div className={style.menuItem}>Help</div>
             <div className={style.menuItem}>Lance</div>
-            <div className={style.userImageContainer}>
+        <div className={style.userImageContainer}>
                 <Image className={style.userImageContainer} src={avatar} width={40} height={40} />
-            </div>
-            {currentAccount ? (
-            <div>
-                {currentAccount.slice(0, 6)}...{currentAccount.slice(39)}
-            </div>
-            ) : (
+        </div>
+        {currentAccount ? (
+          <div>
+            {currentAccount.slice(0, 6)}...{currentAccount.slice(39)}
+          </div>
+        ) : (
                 <div className={style.loginButton}>
                     <BsPerson></BsPerson>
-                    <span className={style.loginText}>Log in</span>
-                </div>
-            )}
+            <span className={style.loginText}>Log in</span>
+          </div>
+        )}
             
-        </div>
+      </div>
     </div>
 }
 
